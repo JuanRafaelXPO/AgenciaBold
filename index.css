@@ -1,0 +1,558 @@
+:root {
+    --abPrimary: #FFDD33;
+    --buttons: #0F3FD3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'raleway', sans-serif;
+}
+
+
+/* HEADER */
+header {
+    background: url("./Assets/bg.svg");
+    background-position: center;
+    background-size: cover;
+    padding: 20px 0 8px 0;
+}
+
+header .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 1100px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+}
+
+header .menu .mobile  i {
+    display: none;
+}
+
+header .menu .logo-menu {
+    width: 50%;
+}
+
+header nav {
+    width: 50%;
+    text-align: right;
+}
+
+header nav a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid var(--abPrimary);
+}
+
+header nav .contact-btn {
+    padding: 10px;
+    background: var(--buttons);
+    border-radius: 6px;
+}
+
+header nav .contact-btn:hover {
+    border: 0;
+}
+
+header .mockup {
+    margin: 100px auto 0;
+    width: 700px;
+    color: white;
+    text-align: center;
+}
+
+header .mockup h1 {
+    font-size: 50px;
+}
+
+header .mockup p {
+    margin: 10px 0 15px;
+    font-size: 17px;
+}
+
+header .mockup img {
+    max-width: 100%;
+}
+
+
+/* SECTION MARCAS */
+section.marcas .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+section.marcas img {
+    width: 250px;
+}
+
+
+/* SECTION PORQUE-NOS */
+section.porque-nos {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1280px;
+    text-align: center;
+    background: #FBFCFE;
+}
+
+.porque-nos .container {
+    max-width: 1280px;
+}
+
+.porque-nos h2 {
+    width: 100%;
+    font-size: 50px;
+}
+
+.porque-nos p {
+    width: 100%;
+    color: rgb(119, 119, 119);
+    font-size: 15px;
+    text-align: center;
+}
+
+.porque-nos .diferenciais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.porque-nos .diferenciais .box-diferenciais {
+    margin-top: 25px;
+    padding: 10px 20px;
+    max-width: 290px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 40px #2426721C;
+}
+
+.porque-nos .diferenciais .box-diferenciais > h3 {
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+.porque-nos .diferenciais .box-diferenciais > p {
+    margin-bottom: 20px;
+    color: #7E92AC;
+    font-size: 13px;
+}
+
+
+/* SECTION CTA */
+section.cta {
+    padding: 20px 10px;
+    min-height: 200px;
+    color: white;
+    text-align: center;
+    background-image: url("./Assets/banner-meio.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.cta > h2 {
+    font-size: 40px;
+}
+
+.cta > h2, section.cta > h4 {
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.cta > a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #0F3FD3;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 7px;
+    background: var(--abPrimary);
+    text-decoration: none;
+}
+
+
+/* SECTION BENEFÍCIOS */
+section.beneficios {
+    padding: 40px 20px;
+}
+
+.beneficios .container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.beneficios .list-beneficios {
+    width: 49%;
+}
+
+.beneficios .list-beneficios h1 {
+    margin: 15px 0;
+    color: black;
+    font-size: 40px;
+}
+
+.beneficios .list-beneficios p{
+    color: #7e92ac;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.beneficios .list-beneficios span {
+    display: inline-block;
+    width: calc(100% - 75px);
+}
+
+.beneficios .list-beneficios img {
+    display: inline-block;
+    width: 70px;
+    vertical-align: middle;
+}
+
+.beneficios .list-beneficios > button {
+    border: 0;
+}
+
+.beneficios .list-beneficios > button > a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 7px;
+    background: var(--buttons);
+}
+
+.beneficios .img-beneficio {
+    width: 50%;
+}
+
+.beneficios .img-beneficio img {
+    max-width: 100%;
+}
+
+
+/* SECTION DEPOIMENTOS */
+section.depoimentos {
+    padding: 40px;
+    background: #fbfcfe;
+}
+
+.depoimentos .container {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.depoimentos h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.depoimentos .container-slider {
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.depoimentos .container-slider .container-slider-single {
+    padding: 15px;
+    text-align: center;
+    background: rgb(209, 209, 209);
+    border-radius: 10px;
+    float: left;
+}
+
+.depoimentos .container-slider .container-slider-single p {
+    margin: 15px;
+    color: #7E92AC;
+    font-size: 14px;
+}
+
+
+/* CARROSSEL DE DEPOIMENTOS */
+.slick-slide {
+    margin-left: 27px;
+}
+
+.slick-list {
+    margin-left: -27px;
+}
+
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	top:30px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #373855;
+	color: #373855;
+}
+
+.slick-slide:focus { outline: none; }
+
+
+/* SECTION CONTATO */
+section.contato {
+    padding: 40px;
+    text-align: center;
+}
+
+.contato .container {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.contato h1 {
+    font-size: 50px;
+}
+
+.contato form {
+    width: 100%;
+}
+
+.contato input[type=text], section.contato input[type=email] {
+    margin: 20px 0;
+    padding: 0 10px;
+    width: 100%;
+    height: 40px;
+    background: #fcfdff;
+    border: 1px solid #c3cce8;
+    border-radius: 5px;
+}
+
+.contato textarea {
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    height: 120px;
+    background: #fcfdff;
+    border: 1px solid #c3cce8;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.contato input[type=submit] {
+    padding: 10px;
+    width: 70%;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    background: var(--buttons);
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    background-image: url("./Assets/banner-meio.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+footer .img-footer {
+
+    margin: 0 auto;
+    text-align: left;
+}
+
+footer .img-footer a img {
+    width: 100%;
+}
+
+footer .contact-links {
+    width: 50%;
+    text-align: center;
+}
+
+footer .contact-links h3 {
+    margin: 15px 0 10px;
+    color: var(--abPrimary);
+    font-size: 30px;
+}
+
+footer .contact-links ul {
+    list-style: none;
+}
+
+footer .contact-links ul li {
+    color: var(--abPrimary);
+}
+
+footer .contact-links ul li a {
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+footer .contact-links ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .contact-links .social-links {
+    margin-top: 15px;
+}
+
+footer .contact-links .social-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer .contact-links .social-links a i {
+    font-size: 25px;
+}
+
+footer .contact-links .social-links a:nth-of-type(1) i:hover {
+    color: #1f4596;
+    cursor: pointer;
+}
+
+footer .contact-links .social-links a:nth-of-type(2) i:hover {
+    color: #e95950;
+    cursor: pointer;
+}
+
+footer .contact-links .social-links a:nth-of-type(3) i:hover {
+    color: #00acee;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        height: 700px;
+        display: block;
+    }
+
+    header .menu .logo-menu {
+        display: inline-block;
+    }
+    
+    header .menu .mobile  i {
+        display: inline-block;
+        color: white;
+        font-size: 40px;
+    }
+
+    header .menu .mobile  i ul {
+        display: none;
+    }
+
+    header .menu .mobile  i:hover ul {
+        display: block;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: royalblue;
+        list-style: none;
+    }
+
+    header .menu .mobile  i:hover ul li {
+        font-size: 18px;
+        padding: 20px 0 15px;
+        border-bottom: 1px solid white;
+    }
+
+    header .menu .mobile  i:hover ul li a {
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+    }
+
+    header nav {
+        display: none;
+    }
+    
+    header .mockup {
+        margin-top: 25px;
+    }
+
+    .porque-nos .diferenciais .box-diferenciais {
+        max-width: 90%;
+    }
+
+    .beneficios .container{
+        display: block;
+    }
+    
+    .beneficios .list-beneficios {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .beneficios .list-beneficios > button {
+        background: white;
+    }
+
+    .beneficios .img-beneficio {
+        width: 100%;
+    }
+
+    footer .container {
+        flex-direction: column-reverse;
+    }
+
+    footer .contact-links {
+        width: 100%;
+    }
+}
